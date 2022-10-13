@@ -1,6 +1,11 @@
 # InsuranceChallenge
 
 ## Installation
+- Access the folder
+
+	```sh
+		cd InsuranceChallenge
+	```
 
 - [Node.js](https://nodejs.org/) v12+ to run.
 
@@ -12,21 +17,25 @@
   
 - Install the [Cypress](https://docs.cypress.io/guides/getting-started/installing-cypress)
 
-## Install the dependencies.
+	You can install the Cypress in Linux with the following command.
+	```
+		 npm install cypress
+		 
+	```
+- Install the dependencies.
 
-```sh
-cd InsuranceChallenge
-npm i
-```
+	```sh
+		npm i
+	```
 
 ## To run on Cypress App
 
-```sh
-npm run cy:open
-```
+	```sh
+		npm run cy:open
+	```
 
 ## To run on Terminal
 
-```sh
-npm run cy:tests
-```
+	```sh
+		npm run cy:tests
+	```
