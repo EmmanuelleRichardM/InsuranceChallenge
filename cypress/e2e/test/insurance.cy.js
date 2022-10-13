@@ -1,35 +1,38 @@
 import insuranceTest from "../test/insuranceTest.js"
 
-context('Insurance', () => {
+context('Have the insurance quote', () => {
 
-	it('Fill the vehicle data', () => {
-	//cy.visit('http://sampleapp.tricentis.com/101/app.php')
+	it('Given Im in the insurance form', () => {
 		insuranceTest.open()
+	})
+
+
+	it('And I fill the vehicle data', () => {
 		insuranceTest.vehicleData()
 		cy.get('#nextenterinsurantdata').click()
 	})
 
-	it('Fill the insurance', () => {
+	it('And I fill the insurance', () => {
 		insuranceTest.insuranceData()
 		cy.get('#nextenterproductdata').click()
 	})
 
-    it('Fill the product data', () => {
+    it('And I fill the product data', () => {
 	  	insuranceTest.productData()
 	    cy.get('#nextselectpriceoption').click()
   	})
 
-    it('Select the price option', () => {
+    it('And I fill the price option', () => {
     	insuranceTest.priceOption()
     	cy.get('#nextsendquote').click()
   	})
 
-	it('Send quote', () => {
+	it('When I send quote', () => {
 		insuranceTest.sendQuote()
 		cy.get('#sendemail').click()
 	})
 
-	it('Success', () => {
+	it('The success - I have the insurance quote', () => {
 		insuranceTest.success()
 		cy.get('.confirm').click()
 	})
