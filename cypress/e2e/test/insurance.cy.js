@@ -12,7 +12,7 @@ context('Have the insurance quote', () => {
 		cy.get('#nextenterinsurantdata').click()
 	})
 
-	it('And I fill the insurance', () => {
+	it('And I fill the insurance data', () => {
 		insuranceTest.insuranceData()
 		cy.get('#nextenterproductdata').click()
 	})
