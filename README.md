@@ -4,7 +4,7 @@
 
 - [Node.js](https://nodejs.org/) v12+ to run.
 
-	You check if the node is already install in Linux with the following command.
+	You can check if the node is already install in Linux with the following command.
 	```
 		node -v
 	```
