@@ -3,7 +3,7 @@
 ## Installation
 - Access the folder
 
-	```sh
+	```
 		cd InsuranceChallenge
 	```
 
@@ -24,18 +24,18 @@
 	```
 - Install the dependencies.
 
-	```sh
+	```
 		npm i
 	```
 
 ## To run on Cypress App
 
-	```sh
+	```
 		npm run cy:open
 	```
 
 ## To run on Terminal
 
-	```sh
+	```
 		npm run cy:tests
 	```
